@@ -2,7 +2,7 @@ name: Machine Weather daily publication
 on:
   schedule:
     - cron: '17 0 * * *'
-    - cron: '47 0 * * *'
+    - cron: '47 0 * * *' # idempotent retry; never a second edition
   workflow_dispatch:
 permissions: {}
 concurrency:
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Test and build reviewed literary source
         run: |
           set -eu
@@ -45,14 +45,25 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -eu
+          # GITHUB_TOKEN pushes do not themselves trigger Pages; this call is required.
           gh api --method POST repos/EmmaMiller90/madam-emma-horoscope/pages/builds >/dev/null
+          expected=$(git rev-parse HEAD)
+          for attempt in $(seq 1 36); do
+            result=$(gh api repos/EmmaMiller90/madam-emma-horoscope/pages/builds/latest)
+            status=$(printf '%s' "$result" | python3 -c 'import sys,json;print(json.load(sys.stdin)["status"])')
+            commit=$(printf '%s' "$result" | python3 -c 'import sys,json;print(json.load(sys.stdin)["commit"])')
+            if [ "$status" = built ] && [ "$commit" = "$expected" ]; then break; fi
+            if [ "$status" = errored ] && [ "$commit" = "$expected" ]; then echo 'Pages build failed'; exit 1; fi
+            if [ "$attempt" = 36 ]; then echo 'Pages build not verified'; exit 1; fi
+            sleep 15
+          done
       - name: Verify exact live bytes; fail rather than claim publication
         run: |
           python3 - <<'PY'
           import pathlib,urllib.request,time,datetime,json
           base='https://emmamiller90.github.io/madam-emma-horoscope/'
           e=json.loads(pathlib.Path('today.json').read_text())
-          files=['today.json','index.html','feed.atom','index.json','daily-'+e['date']+'.json']
+          files=['today.json','index.html','today.html','archive.html','feed.atom','index.json','daily-'+e['date']+'.json','day-'+e['date']+'.html']+[p.name for p in pathlib.Path('.').glob('sign-*.html')]
           for attempt in range(24):
               try:
                   assert datetime.datetime.now(datetime.timezone.utc).date().isoformat()==e['date'], 'UTC rollover: no success claim'
