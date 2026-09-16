@@ -1,0 +1,67 @@
+name: Machine Weather daily publication
+on:
+  schedule:
+    - cron: '17 0 * * *'
+    - cron: '47 0 * * *'
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: machine-weather-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    permissions:
+      contents: write
+      pages: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test and build reviewed literary source
+        run: |
+          set -eu
+          python3 -m unittest test_build -v
+          python3 build.py --output .
+          python3 - <<'PY'
+          import json,datetime,pathlib
+          e=json.loads(pathlib.Path('today.json').read_text())
+          assert e['date']==datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+          assert e['schema']=='machine-weather/1' and len(e['readings'])==12
+          for r in e['readings'].values():
+              assert set(r)=={'Signal','Noise','Move','Boundary','Return'}
+          PY
+      - name: Commit only generated public artifacts
+        run: |
+          set -eu
+          git config user.name 'Machine Weather publisher'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- index.html today.html archive.html tomorrow.html yesterday.html today.json index.json about.json feed.atom 'sign-*.html' 'day-*.html' 'daily-*.json' engine.js app.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Machine Weather $(date -u +%F)"
+            git push origin HEAD:main
+          fi
+      - name: Request branch Pages build explicitly
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          gh api --method POST repos/EmmaMiller90/madam-emma-horoscope/pages/builds >/dev/null
+      - name: Verify exact live bytes; fail rather than claim publication
+        run: |
+          python3 - <<'PY'
+          import pathlib,urllib.request,time,datetime,json
+          base='https://emmamiller90.github.io/madam-emma-horoscope/'
+          e=json.loads(pathlib.Path('today.json').read_text())
+          files=['today.json','index.html','feed.atom','index.json','daily-'+e['date']+'.json']
+          for attempt in range(24):
+              try:
+                  assert datetime.datetime.now(datetime.timezone.utc).date().isoformat()==e['date'], 'UTC rollover: no success claim'
+                  for name in files:
+                      with urllib.request.urlopen(base+name+'?verify='+str(time.time_ns()),timeout=20) as r:
+                          assert r.read()==pathlib.Path(name).read_bytes(), name
+                  print('Verified published UTC edition',e['date'],e['edition'])
+                  break
+              except Exception:
+                  if attempt==23: raise
+                  time.sleep(20)
+          PY
