@@ -18,7 +18,10 @@ def edition(now,number):
     weather=data['weather'][n%len(data['weather'])]; readings={}
     for i,s in enumerate(data['signs']):
         # A transparent finite editorial almanac, not a prediction or telemetry engine.
-        readings[s['name']]={'Signal':s['signal'][(n+i)%3], 'Noise':s['noise'][(n//3+i)%3], 'Move':s['move'][(n//9+i)%3], 'Boundary':s['boundary'], 'Return':s['return']+' '+weather['question']}
+        # Mix the fast digit into the slower ones: all three sections change
+        # daily, while each sign still visits all 27 authored combinations.
+        # Day zero is unchanged; already-built editions are never regenerated.
+        readings[s['name']]={'Signal':s['signal'][(n+i)%3], 'Noise':s['noise'][(n+n//3+i)%3], 'Move':s['move'][(n+n//9+i)%3], 'Boundary':s['boundary'], 'Return':s['return']+' '+weather['question']}
     return {'schema':'machine-weather/1','status':'available','fixture':False,'date':day.isoformat(),'edition':number,'published_at':now.isoformat(timespec='seconds').replace('+00:00','Z'),'valid_until':datetime.combine(day+timedelta(days=1),datetime.min.time(),timezone.utc).isoformat().replace('+00:00','Z'),'weather':weather,'readings':readings,'modes':data['modes'],'disclaimer':DISCLAIMER,'method':'Deterministic rotation of an authored finite literary almanac. Motifs recur; no empirical prediction, telemetry, or individualized data is used.'}
 def build(out, now=None):
     now=now or datetime.now(timezone.utc)

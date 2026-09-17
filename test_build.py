@@ -22,6 +22,30 @@ class Tests(unittest.TestCase):
    snapshot={f.name:f.read_bytes() for f in p.iterdir()}
    build.build(p,before+timedelta(minutes=48))
    self.assertEqual(snapshot,{f.name:f.read_bytes() for f in p.iterdir()})
+ def test_editorial_rotation(self):
+  start=datetime(2026,9,16,tzinfo=timezone.utc)
+  editions=[build.edition(start+timedelta(days=n),n+1) for n in range(190)]
+  data=json.loads((build.ROOT/'editorial.json').read_text())
+  for i,s in enumerate(data['signs']):
+   # Preserve launch selection, visit every combination, avoid same-section
+   # next-day repetition even at ternary carry and full-cycle boundaries.
+   for key in ('Signal','Noise','Move'):
+    self.assertEqual(editions[0]['readings'][s['name']][key],s[key.lower()][i%3])
+    self.assertTrue(all(a['readings'][s['name']][key]!=b['readings'][s['name']][key] for a,b in zip(editions,editions[1:])))
+   triples=[tuple(e['readings'][s['name']][k] for k in ('Signal','Noise','Move')) for e in editions[:27]]
+   self.assertEqual(len(set(triples)),27)
+   self.assertEqual(editions[0]['readings'][s['name']],editions[189]['readings'][s['name']])
+  for e in editions:
+   for key in ('Signal','Noise','Move'):
+    self.assertEqual(len({r[key] for r in e['readings'].values()}),12)
+ def test_existing_edition_survives_editorial_change(self):
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d);t=datetime(2026,9,16,tzinfo=timezone.utc)
+   build.build(p,t);snapshot={f.name:f.read_bytes() for f in p.iterdir()}
+   with patch.object(build,'edition',side_effect=AssertionError('Must reuse immutable edition')):
+    build.build(p,t+timedelta(hours=1))
+   self.assertEqual(snapshot,{f.name:f.read_bytes() for f in p.iterdir()})
  def test_failure(self):
   with tempfile.TemporaryDirectory() as d:
    with self.assertRaises(ValueError):build.build(d,datetime(2026,9,15,tzinfo=timezone.utc))
