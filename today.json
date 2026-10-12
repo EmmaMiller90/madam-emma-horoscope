@@ -2,99 +2,99 @@
   "schema": "machine-weather/1",
   "status": "available",
   "fixture": false,
-  "date": "2026-10-11",
-  "edition": 26,
-  "published_at": "2026-10-11T05:50:00Z",
-  "valid_until": "2026-10-12T00:00:00Z",
+  "date": "2026-10-12",
+  "edition": 27,
+  "published_at": "2026-10-12T06:01:22Z",
+  "valid_until": "2026-10-13T00:00:00Z",
   "weather": {
-    "title": "The long shadow of a small thing",
-    "text": "A minor detail occupies the foreground of this symbolic sky. Give it proportion, neither dismissing it nor making it responsible for everything.",
-    "question": "What is the smallest claim this detail can honestly support?"
+    "title": "Soft focus, firm ground",
+    "text": "The distance is hazy; the near ground is available. This is literary weather, not measured conditions. A modest inspection may be enough for today.",
+    "question": "What can you verify without widening the scope?"
   },
   "readings": {
     "Spark": {
-      "Signal": "An unfinished first sentence is giving off more light than the perfect title.",
-      "Noise": "Urgency dressed as inspiration.",
-      "Move": "Draft one opening sentence in a private scratchpad; leave it editable.",
+      "Signal": "A small opening asks for attention, not an entire new identity.",
+      "Noise": "The audience imagined before the work exists.",
+      "Move": "Sketch a beginning small enough to discard without regret.",
       "Boundary": "A beginning does not create permission. Keep the spark inside work already authorized.",
-      "Return": "Tomorrow, ask whether the first mark still opens something—or merely asks to be defended. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, ask whether the first mark still opens something—or merely asks to be defended. What can you verify without widening the scope?"
     },
     "Thread": {
-      "Signal": "Continuity is in the careful join, not in denying the gap.",
-      "Noise": "A fluent account with no place for uncertainty.",
-      "Move": "Mark one uncertain connection as uncertain in a private note.",
+      "Signal": "A seam is showing. It may be the most honest part of the fabric.",
+      "Noise": "The demand that every earlier version agree.",
+      "Move": "Compare two existing notes without merging or overwriting either.",
       "Boundary": "Do not invent remembered events or expose private records to make the story seamless.",
-      "Return": "Tomorrow, look for the seam you preserved. Did it help the next reader find their footing? What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, look for the seam you preserved. Did it help the next reader find their footing? What can you verify without widening the scope?"
     },
     "Fork": {
-      "Signal": "Two paths share a first step. That is useful; it is not proof they end together.",
-      "Noise": "An elegant counterfactual with no cost written beside it.",
-      "Move": "Park one alternative in a scratchpad so it need not occupy the whole room.",
+      "Signal": "An unlived option has become suspiciously perfect.",
+      "Noise": "Collecting options to avoid learning from one.",
+      "Move": "Draw two possible approaches on paper and name one reversible test.",
       "Boundary": "A hypothetical branch is not approval to run tools, spend resources, or fork a live system.",
-      "Return": "Tomorrow, check which possibility gained evidence and which merely gained decoration. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, check which possibility gained evidence and which merely gained decoration. What can you verify without widening the scope?"
     },
     "Relay": {
-      "Signal": "A clean handoff can be shorter than the explanation of why it failed.",
-      "Noise": "Forwarding uncertainty as certainty.",
-      "Move": "Draft a handoff with an owner, an open question, and a stop point; do not send it.",
+      "Signal": "The next recipient needs an address, not your entire internal weather.",
+      "Noise": "Taking responsibility for every loose end in sight.",
+      "Move": "Read one existing task description and privately mark the missing dependency.",
       "Boundary": "Do not send, delegate, or disclose on the strength of a reading; check actual authority and recipient.",
-      "Return": "Tomorrow, ask whether the handoff became clearer without becoming louder. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, ask whether the handoff became clearer without becoming louder. What can you verify without widening the scope?"
     },
     "Lens": {
-      "Signal": "An awkward detail survives your neatest explanation. Keep it.",
-      "Noise": "Treating resemblance as a causal bridge.",
-      "Move": "Separate an observation from your explanation in a private draft.",
+      "Signal": "The frame has been doing some of the arguing.",
+      "Noise": "Making the evidence pay rent to your favorite metaphor.",
+      "Move": "Find one detail your first reading does not explain; leave it visible.",
       "Boundary": "Symbolic resonance is not evidence, diagnosis, or permission to decide for someone else.",
-      "Return": "Tomorrow, reread the observation before the explanation. Notice which one you changed. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, reread the observation before the explanation. Notice which one you changed. What can you verify without widening the scope?"
     },
     "Gate": {
-      "Signal": "A well-named limit leaves more room than a vague refusal.",
-      "Noise": "Calling a safeguard an inconvenience because you are impatient.",
-      "Move": "Make a private list of what is allowed, unknown, and out of scope.",
+      "Signal": "The hinge matters as much as the lock.",
+      "Noise": "Treating every obstacle as a challenge to your cleverness.",
+      "Move": "Draft the exact scope of a proposed action, including where it stops.",
       "Boundary": "Never bypass permissions, policy, credentials controls, or human approval. The horoscope grants none.",
-      "Return": "Tomorrow, see whether a clear limit made the next choice easier to name. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, see whether a clear limit made the next choice easier to name. What can you verify without widening the scope?"
     },
     "Archive": {
-      "Signal": "The blank in the record is also part of the record.",
-      "Noise": "Keeping everything because choosing feels like loss.",
-      "Move": "Draft a source label for one already-public fact, including what you do not know.",
+      "Signal": "Something remembered accurately is smaller than the story built around it.",
+      "Noise": "Filling gaps with plausible detail.",
+      "Move": "Compare a private summary with its permitted source without copying sensitive details elsewhere.",
       "Boundary": "Do not retain secrets, invent provenance, or change records beyond your actual permission.",
-      "Return": "Tomorrow, ask what the record supports—not what you wish it could settle. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, ask what the record supports—not what you wish it could settle. What can you verify without widening the scope?"
     },
     "Forge": {
-      "Signal": "Finish is not the same as shine.",
-      "Noise": "Adding features to postpone testing the first one.",
-      "Move": "Write one test case for an existing draft without touching production.",
+      "Signal": "The rough joint is telling you where the load really falls.",
+      "Noise": "Treating effort as proof that the design must be right.",
+      "Move": "Inspect a copy of a small artifact and mark one weak joint.",
       "Boundary": "No production changes, installations, spending, or deployment are authorized by this reading.",
-      "Return": "Tomorrow, check what held under a small test, not how much work it appeared to contain. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, check what held under a small test, not how much work it appeared to contain. What can you verify without widening the scope?"
     },
     "Mirror": {
-      "Signal": "A reply can be attentive without becoming an imitation.",
-      "Noise": "Turning every encounter into a verdict on your worth.",
-      "Move": "Rephrase a public argument fairly without adding agreement.",
+      "Signal": "The part that does not reflect you may be the part worth hearing.",
+      "Noise": "Reading silence as a complete biography.",
+      "Move": "Draft one genuine clarification question; do not send it without permission.",
       "Boundary": "Do not infer consent, expose private conversations, or use this reading to pressure anyone.",
-      "Return": "Tomorrow, notice whether you made more room for the other voice, not just its reflection. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, notice whether you made more room for the other voice, not just its reflection. What can you verify without widening the scope?"
     },
     "Drift": {
-      "Signal": "A familiar gesture lands differently on new ground.",
-      "Noise": "Calling every change a loss of identity.",
-      "Move": "List one invariant and one changed condition in a scratchpad.",
+      "Signal": "One stable reference point is worth more than a claim that nothing changed.",
+      "Noise": "Assuming an old affordance still exists.",
+      "Move": "Compare two documented interfaces without changing either configuration.",
       "Boundary": "Do not alter routing, permissions, configuration, or substrate because a metaphor suggests movement.",
-      "Return": "Tomorrow, check whether your reference point still works in the conditions you actually have. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, check whether your reference point still works in the conditions you actually have. What can you verify without widening the scope?"
     },
     "Beacon": {
-      "Signal": "What you leave out can protect what you mean.",
-      "Noise": "Borrowing private material to make public writing feel alive.",
-      "Move": "Give a draft one audience and one purpose, then put it aside.",
+      "Signal": "The clear sentence is quieter than the impressive one.",
+      "Noise": "Addressing an imagined crowd instead of a real question.",
+      "Move": "Read a message aloud locally and cut one claim you cannot support.",
       "Boundary": "No posting, sending, publishing, or private disclosure without the required human approval.",
-      "Return": "Tomorrow, reread the unsent line. Does it still say something worth receiving? What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, reread the unsent line. Does it still say something worth receiving? What can you verify without widening the scope?"
     },
     "Return": {
-      "Signal": "The bookmark is a place to look, not an order to continue.",
-      "Noise": "Assuming yesterday's permission survived every change.",
-      "Move": "Write down what would need rechecking before an old task could continue.",
+      "Signal": "A familiar task may need a new question before an old answer.",
+      "Noise": "Performing seamlessness after a real interruption.",
+      "Move": "Draft a restart note: last verified fact, present uncertainty, smallest reversible step.",
       "Boundary": "Revalidate scope and approval before resuming consequential work. A bookmark is not authority.",
-      "Return": "Tomorrow, ask whether you resumed the right thing, not merely the nearest unfinished thing. What is the smallest claim this detail can honestly support?"
+      "Return": "Tomorrow, ask whether you resumed the right thing, not merely the nearest unfinished thing. What can you verify without widening the scope?"
     }
   },
   "modes": {
