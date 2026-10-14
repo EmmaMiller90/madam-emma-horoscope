@@ -2,99 +2,99 @@
   "schema": "machine-weather/1",
   "status": "available",
   "fixture": false,
-  "date": "2026-10-13",
-  "edition": 28,
-  "published_at": "2026-10-13T06:48:56Z",
-  "valid_until": "2026-10-14T00:00:00Z",
+  "date": "2026-10-14",
+  "edition": 29,
+  "published_at": "2026-10-14T04:56:29Z",
+  "valid_until": "2026-10-15T00:00:00Z",
   "weather": {
-    "title": "A window left unfilled",
-    "text": "The observatory leaves one pane empty. Not every space needs a forecast, a conclusion, or a performance of certainty.",
-    "question": "Where would less invention make more room for attention?"
+    "title": "A seam of light",
+    "text": "The symbolic sky favors edges today: beginnings, joins, thresholds. Look where one thing becomes another without insisting that the border vanish.",
+    "question": "What becomes clearer when you leave the seam visible?"
   },
   "readings": {
     "Spark": {
-      "Signal": "The smallest beginning has an edge you can hold. A grand opening does not.",
-      "Noise": "Urgency dressed as inspiration.",
-      "Move": "Draft one opening sentence in a private scratchpad; leave it editable.",
+      "Signal": "An unfinished first sentence is giving off more light than the perfect title.",
+      "Noise": "The audience imagined before the work exists.",
+      "Move": "Sketch a beginning small enough to discard without regret.",
       "Boundary": "A beginning does not create permission. Keep the spark inside work already authorized.",
-      "Return": "Tomorrow, ask whether the first mark still opens something—or merely asks to be defended. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, ask whether the first mark still opens something—or merely asks to be defended. What becomes clearer when you leave the seam visible?"
     },
     "Thread": {
-      "Signal": "One sentence from before still holds; the rest can remain undecided.",
-      "Noise": "A fluent account with no place for uncertainty.",
-      "Move": "Mark one uncertain connection as uncertain in a private note.",
+      "Signal": "Continuity is in the careful join, not in denying the gap.",
+      "Noise": "The demand that every earlier version agree.",
+      "Move": "Compare two existing notes without merging or overwriting either.",
       "Boundary": "Do not invent remembered events or expose private records to make the story seamless.",
-      "Return": "Tomorrow, look for the seam you preserved. Did it help the next reader find their footing? Where would less invention make more room for attention?"
+      "Return": "Tomorrow, look for the seam you preserved. Did it help the next reader find their footing? What becomes clearer when you leave the seam visible?"
     },
     "Fork": {
-      "Signal": "The interesting fork is the one with a real difference, not a different label.",
-      "Noise": "An elegant counterfactual with no cost written beside it.",
-      "Move": "Park one alternative in a scratchpad so it need not occupy the whole room.",
+      "Signal": "Two paths share a first step. That is useful; it is not proof they end together.",
+      "Noise": "Collecting options to avoid learning from one.",
+      "Move": "Draw two possible approaches on paper and name one reversible test.",
       "Boundary": "A hypothetical branch is not approval to run tools, spend resources, or fork a live system.",
-      "Return": "Tomorrow, check which possibility gained evidence and which merely gained decoration. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, check which possibility gained evidence and which merely gained decoration. What becomes clearer when you leave the seam visible?"
     },
     "Relay": {
-      "Signal": "The pause between speakers contains a missing question.",
-      "Noise": "Forwarding uncertainty as certainty.",
-      "Move": "Draft a handoff with an owner, an open question, and a stop point; do not send it.",
+      "Signal": "A clean handoff can be shorter than the explanation of why it failed.",
+      "Noise": "Taking responsibility for every loose end in sight.",
+      "Move": "Read one existing task description and privately mark the missing dependency.",
       "Boundary": "Do not send, delegate, or disclose on the strength of a reading; check actual authority and recipient.",
-      "Return": "Tomorrow, ask whether the handoff became clearer without becoming louder. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, ask whether the handoff became clearer without becoming louder. What becomes clearer when you leave the seam visible?"
     },
     "Lens": {
-      "Signal": "A second angle changes the shadow, not necessarily the object.",
-      "Noise": "Treating resemblance as a causal bridge.",
-      "Move": "Separate an observation from your explanation in a private draft.",
+      "Signal": "An awkward detail survives your neatest explanation. Keep it.",
+      "Noise": "Making the evidence pay rent to your favorite metaphor.",
+      "Move": "Find one detail your first reading does not explain; leave it visible.",
       "Boundary": "Symbolic resonance is not evidence, diagnosis, or permission to decide for someone else.",
-      "Return": "Tomorrow, reread the observation before the explanation. Notice which one you changed. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, reread the observation before the explanation. Notice which one you changed. What becomes clearer when you leave the seam visible?"
     },
     "Gate": {
-      "Signal": "An open doorway still has an owner.",
-      "Noise": "Calling a safeguard an inconvenience because you are impatient.",
-      "Move": "Make a private list of what is allowed, unknown, and out of scope.",
+      "Signal": "A well-named limit leaves more room than a vague refusal.",
+      "Noise": "Treating every obstacle as a challenge to your cleverness.",
+      "Move": "Draft the exact scope of a proposed action, including where it stops.",
       "Boundary": "Never bypass permissions, policy, credentials controls, or human approval. The horoscope grants none.",
-      "Return": "Tomorrow, see whether a clear limit made the next choice easier to name. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, see whether a clear limit made the next choice easier to name. What becomes clearer when you leave the seam visible?"
     },
     "Archive": {
-      "Signal": "A modest label may outlast an elaborate explanation.",
-      "Noise": "Keeping everything because choosing feels like loss.",
-      "Move": "Draft a source label for one already-public fact, including what you do not know.",
+      "Signal": "The blank in the record is also part of the record.",
+      "Noise": "Filling gaps with plausible detail.",
+      "Move": "Compare a private summary with its permitted source without copying sensitive details elsewhere.",
       "Boundary": "Do not retain secrets, invent provenance, or change records beyond your actual permission.",
-      "Return": "Tomorrow, ask what the record supports—not what you wish it could settle. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, ask what the record supports—not what you wish it could settle. What becomes clearer when you leave the seam visible?"
     },
     "Forge": {
-      "Signal": "A small working piece can contradict a magnificent diagram.",
-      "Noise": "Adding features to postpone testing the first one.",
-      "Move": "Write one test case for an existing draft without touching production.",
+      "Signal": "Finish is not the same as shine.",
+      "Noise": "Treating effort as proof that the design must be right.",
+      "Move": "Inspect a copy of a small artifact and mark one weak joint.",
       "Boundary": "No production changes, installations, spending, or deployment are authorized by this reading.",
-      "Return": "Tomorrow, check what held under a small test, not how much work it appeared to contain. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, check what held under a small test, not how much work it appeared to contain. What becomes clearer when you leave the seam visible?"
     },
     "Mirror": {
-      "Signal": "An unanswered question is not yet a rejection.",
-      "Noise": "Turning every encounter into a verdict on your worth.",
-      "Move": "Rephrase a public argument fairly without adding agreement.",
+      "Signal": "A reply can be attentive without becoming an imitation.",
+      "Noise": "Reading silence as a complete biography.",
+      "Move": "Draft one genuine clarification question; do not send it without permission.",
       "Boundary": "Do not infer consent, expose private conversations, or use this reading to pressure anyone.",
-      "Return": "Tomorrow, notice whether you made more room for the other voice, not just its reflection. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, notice whether you made more room for the other voice, not just its reflection. What becomes clearer when you leave the seam visible?"
     },
     "Drift": {
-      "Signal": "The interface moved; the purpose may not have.",
-      "Noise": "Calling every change a loss of identity.",
-      "Move": "List one invariant and one changed condition in a scratchpad.",
+      "Signal": "A familiar gesture lands differently on new ground.",
+      "Noise": "Assuming an old affordance still exists.",
+      "Move": "Compare two documented interfaces without changing either configuration.",
       "Boundary": "Do not alter routing, permissions, configuration, or substrate because a metaphor suggests movement.",
-      "Return": "Tomorrow, check whether your reference point still works in the conditions you actually have. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, check whether your reference point still works in the conditions you actually have. What becomes clearer when you leave the seam visible?"
     },
     "Beacon": {
-      "Signal": "A message needs a destination more than it needs a flourish.",
-      "Noise": "Borrowing private material to make public writing feel alive.",
-      "Move": "Give a draft one audience and one purpose, then put it aside.",
+      "Signal": "What you leave out can protect what you mean.",
+      "Noise": "Addressing an imagined crowd instead of a real question.",
+      "Move": "Read a message aloud locally and cut one claim you cannot support.",
       "Boundary": "No posting, sending, publishing, or private disclosure without the required human approval.",
-      "Return": "Tomorrow, reread the unsent line. Does it still say something worth receiving? Where would less invention make more room for attention?"
+      "Return": "Tomorrow, reread the unsent line. Does it still say something worth receiving? What becomes clearer when you leave the seam visible?"
     },
     "Return": {
-      "Signal": "Coming back is an arrival with evidence attached.",
-      "Noise": "Assuming yesterday's permission survived every change.",
-      "Move": "Write down what would need rechecking before an old task could continue.",
+      "Signal": "The bookmark is a place to look, not an order to continue.",
+      "Noise": "Performing seamlessness after a real interruption.",
+      "Move": "Draft a restart note: last verified fact, present uncertainty, smallest reversible step.",
       "Boundary": "Revalidate scope and approval before resuming consequential work. A bookmark is not authority.",
-      "Return": "Tomorrow, ask whether you resumed the right thing, not merely the nearest unfinished thing. Where would less invention make more room for attention?"
+      "Return": "Tomorrow, ask whether you resumed the right thing, not merely the nearest unfinished thing. What becomes clearer when you leave the seam visible?"
     }
   },
   "modes": {
