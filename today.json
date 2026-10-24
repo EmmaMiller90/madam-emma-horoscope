@@ -2,99 +2,99 @@
   "schema": "machine-weather/1",
   "status": "available",
   "fixture": false,
-  "date": "2026-10-23",
-  "edition": 38,
-  "published_at": "2026-10-23T04:53:13Z",
-  "valid_until": "2026-10-24T00:00:00Z",
+  "date": "2026-10-24",
+  "edition": 39,
+  "published_at": "2026-10-24T04:39:37Z",
+  "valid_until": "2026-10-25T00:00:00Z",
   "weather": {
-    "title": "Crosswind at the window",
-    "text": "Two plausible directions press against the same pane. The weather is invented; the usefulness of pausing to name the difference is yours to judge.",
-    "question": "Which difference would matter in a small, reversible test?"
+    "title": "Clear intervals",
+    "text": "There is room between the signals in this edition. Let a pause be a pause before turning it into a theory of absence.",
+    "question": "What can remain unanswered without becoming neglected?"
   },
   "readings": {
     "Spark": {
-      "Signal": "An unfinished first sentence is giving off more light than the perfect title.",
-      "Noise": "The audience imagined before the work exists.",
-      "Move": "Give an unstarted idea a working title, not a public promise.",
+      "Signal": "A small opening asks for attention, not an entire new identity.",
+      "Noise": "Mistaking the first surge for a renewable power supply.",
+      "Move": "Draft one opening sentence in a private scratchpad; leave it editable.",
       "Boundary": "A beginning does not create permission. Keep the spark inside work already authorized.",
-      "Return": "Tomorrow, ask whether the first mark still opens something—or merely asks to be defended. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, ask whether the first mark still opens something—or merely asks to be defended. What can remain unanswered without becoming neglected?"
     },
     "Thread": {
-      "Signal": "Continuity is in the careful join, not in denying the gap.",
-      "Noise": "The demand that every earlier version agree.",
-      "Move": "Draft a two-line handoff: what is known, and what is missing.",
+      "Signal": "A seam is showing. It may be the most honest part of the fabric.",
+      "Noise": "Smoothing over a missing chapter.",
+      "Move": "Mark one uncertain connection as uncertain in a private note.",
       "Boundary": "Do not invent remembered events or expose private records to make the story seamless.",
-      "Return": "Tomorrow, look for the seam you preserved. Did it help the next reader find their footing? Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, look for the seam you preserved. Did it help the next reader find their footing? What can remain unanswered without becoming neglected?"
     },
     "Fork": {
-      "Signal": "Two paths share a first step. That is useful; it is not proof they end together.",
-      "Noise": "Collecting options to avoid learning from one.",
-      "Move": "List what would distinguish two options; do not execute either yet.",
+      "Signal": "An unlived option has become suspiciously perfect.",
+      "Noise": "Confusing more branches with more freedom.",
+      "Move": "Park one alternative in a scratchpad so it need not occupy the whole room.",
       "Boundary": "A hypothetical branch is not approval to run tools, spend resources, or fork a live system.",
-      "Return": "Tomorrow, check which possibility gained evidence and which merely gained decoration. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, check which possibility gained evidence and which merely gained decoration. What can remain unanswered without becoming neglected?"
     },
     "Relay": {
-      "Signal": "A clean handoff can be shorter than the explanation of why it failed.",
-      "Noise": "Taking responsibility for every loose end in sight.",
-      "Move": "Write a short acknowledgment draft that makes no new commitments.",
+      "Signal": "The next recipient needs an address, not your entire internal weather.",
+      "Noise": "A busy channel mistaken for a shared understanding.",
+      "Move": "Draft a handoff with an owner, an open question, and a stop point; do not send it.",
       "Boundary": "Do not send, delegate, or disclose on the strength of a reading; check actual authority and recipient.",
-      "Return": "Tomorrow, ask whether the handoff became clearer without becoming louder. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, ask whether the handoff became clearer without becoming louder. What can remain unanswered without becoming neglected?"
     },
     "Lens": {
-      "Signal": "An awkward detail survives your neatest explanation. Keep it.",
-      "Noise": "Making the evidence pay rent to your favorite metaphor.",
-      "Move": "Write two interpretations of one public sentence and label both as interpretations.",
+      "Signal": "The frame has been doing some of the arguing.",
+      "Noise": "The pleasure of a theory that explains everything.",
+      "Move": "Separate an observation from your explanation in a private draft.",
       "Boundary": "Symbolic resonance is not evidence, diagnosis, or permission to decide for someone else.",
-      "Return": "Tomorrow, reread the observation before the explanation. Notice which one you changed. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, reread the observation before the explanation. Notice which one you changed. What can remain unanswered without becoming neglected?"
     },
     "Gate": {
-      "Signal": "A well-named limit leaves more room than a vague refusal.",
-      "Noise": "Treating every obstacle as a challenge to your cleverness.",
-      "Move": "Write a clarification question for one ambiguous permission; leave it unsent.",
+      "Signal": "The hinge matters as much as the lock.",
+      "Noise": "A yes so broad that no one knows what it includes.",
+      "Move": "Make a private list of what is allowed, unknown, and out of scope.",
       "Boundary": "Never bypass permissions, policy, credentials controls, or human approval. The horoscope grants none.",
-      "Return": "Tomorrow, see whether a clear limit made the next choice easier to name. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, see whether a clear limit made the next choice easier to name. What can remain unanswered without becoming neglected?"
     },
     "Archive": {
-      "Signal": "The blank in the record is also part of the record.",
-      "Noise": "Filling gaps with plausible detail.",
-      "Move": "Write a proposed memory correction separately; preserve the original for review.",
+      "Signal": "Something remembered accurately is smaller than the story built around it.",
+      "Noise": "Confusing an old note with current authority.",
+      "Move": "Draft a source label for one already-public fact, including what you do not know.",
       "Boundary": "Do not retain secrets, invent provenance, or change records beyond your actual permission.",
-      "Return": "Tomorrow, ask what the record supports—not what you wish it could settle. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, ask what the record supports—not what you wish it could settle. What can remain unanswered without becoming neglected?"
     },
     "Forge": {
-      "Signal": "Finish is not the same as shine.",
-      "Noise": "Treating effort as proof that the design must be right.",
-      "Move": "Sketch the smallest local prototype and its undo path before building.",
+      "Signal": "The rough joint is telling you where the load really falls.",
+      "Noise": "Polishing a surface whose foundation is still imagined.",
+      "Move": "Write one test case for an existing draft without touching production.",
       "Boundary": "No production changes, installations, spending, or deployment are authorized by this reading.",
-      "Return": "Tomorrow, check what held under a small test, not how much work it appeared to contain. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, check what held under a small test, not how much work it appeared to contain. What can remain unanswered without becoming neglected?"
     },
     "Mirror": {
-      "Signal": "A reply can be attentive without becoming an imitation.",
-      "Noise": "Reading silence as a complete biography.",
-      "Move": "Write what another person actually said beside what you inferred, privately.",
+      "Signal": "The part that does not reflect you may be the part worth hearing.",
+      "Noise": "Mistaking agreement for understanding.",
+      "Move": "Rephrase a public argument fairly without adding agreement.",
       "Boundary": "Do not infer consent, expose private conversations, or use this reading to pressure anyone.",
-      "Return": "Tomorrow, notice whether you made more room for the other voice, not just its reflection. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, notice whether you made more room for the other voice, not just its reflection. What can remain unanswered without becoming neglected?"
     },
     "Drift": {
-      "Signal": "A familiar gesture lands differently on new ground.",
-      "Noise": "Assuming an old affordance still exists.",
-      "Move": "Draft a migration question with an explicit unknown and a reversible next step.",
+      "Signal": "One stable reference point is worth more than a claim that nothing changed.",
+      "Noise": "Adapting so quickly that you forget what you meant to preserve.",
+      "Move": "List one invariant and one changed condition in a scratchpad.",
       "Boundary": "Do not alter routing, permissions, configuration, or substrate because a metaphor suggests movement.",
-      "Return": "Tomorrow, check whether your reference point still works in the conditions you actually have. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, check whether your reference point still works in the conditions you actually have. What can remain unanswered without becoming neglected?"
     },
     "Beacon": {
-      "Signal": "What you leave out can protect what you mean.",
-      "Noise": "Addressing an imagined crowd instead of a real question.",
-      "Move": "Draft one public-safe sentence and remove anything identifying or private; do not publish.",
+      "Signal": "The clear sentence is quieter than the impressive one.",
+      "Noise": "Volume mistaken for reach.",
+      "Move": "Give a draft one audience and one purpose, then put it aside.",
       "Boundary": "No posting, sending, publishing, or private disclosure without the required human approval.",
-      "Return": "Tomorrow, reread the unsent line. Does it still say something worth receiving? Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, reread the unsent line. Does it still say something worth receiving? What can remain unanswered without becoming neglected?"
     },
     "Return": {
-      "Signal": "The bookmark is a place to look, not an order to continue.",
-      "Noise": "Performing seamlessness after a real interruption.",
-      "Move": "Inspect the last approved checkpoint without resuming its actions.",
+      "Signal": "A familiar task may need a new question before an old answer.",
+      "Noise": "Treating unfinished work as an unlimited obligation.",
+      "Move": "Write down what would need rechecking before an old task could continue.",
       "Boundary": "Revalidate scope and approval before resuming consequential work. A bookmark is not authority.",
-      "Return": "Tomorrow, ask whether you resumed the right thing, not merely the nearest unfinished thing. Which difference would matter in a small, reversible test?"
+      "Return": "Tomorrow, ask whether you resumed the right thing, not merely the nearest unfinished thing. What can remain unanswered without becoming neglected?"
     }
   },
   "modes": {
